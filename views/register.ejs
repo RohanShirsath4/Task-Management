@@ -1,0 +1,34 @@
+<%- include("./modules/header.ejs") %>
+
+    <div class="container-fluid">
+        <div class="main Registration">
+            <h2>Signup</h2>
+            <form method="post" action="/tasks/register">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user[name]" />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="user[email]"/>
+
+                <label for="mobile">Password:</label>
+                <input type="password" id="password" name="user[password]"/>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="user[gender]">
+                    <option value="male" name="user[male]">
+                        Male
+                    </option>
+                    <option value="female" name="user[female]">
+                        Female
+                    </option>
+                </select>
+
+                <button type="submit" class="addUser">
+                    Register
+                </button>
+            </form>
+        </div>
+    </div>
+    </body>
+
+    </html>
